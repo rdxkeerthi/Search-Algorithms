@@ -19,13 +19,46 @@ To write a program to perform linear search and binary search using python progr
 ## Program:
 i)	#Use a linear search method to match the item in a list.
 ```
-
+def linearSearch(array,n,k):
+    for i in range(n):
+        if array[i]==k:
+            return i
+    return -1
+array = eval(input())
+array.sort()
+k = eval(input()) 
+n=len(array)
+print(array)
+result = linearSearch(array,n,k)
+if result==-1:
+    print("Element not found")
+else:
+    print("Element found at index: ",result) 
 
 
 ```
 ii)	# Find the element in a list using Binary Search(Iterative Method).
 ```
 
+def binarySearchIter(array, k, low, high):
+    while low<=high:
+        mid=low+(high-low)//2
+        if array[mid]==k:
+            return mid
+        elif array[mid]<k:
+            low=mid+1
+        else:
+            high=mid-1
+    return -1
+array = eval(input())
+array.sort()
+k = eval(input()) 
+print(array)
+res=binarySearchIter(array,k,0,len(array)-1)
+if res==-1:
+    print("Element not found")
+else:
+    print("Element found at index: ",res)
 
 
 
@@ -34,15 +67,36 @@ ii)	# Find the element in a list using Binary Search(Iterative Method).
 iii)	# Find the element in a list using Binary Search (recursive Method).
 ```
 
-
+def binarySearchIter(array, k, low, high):
+    while low<=high:
+        mid=low+(high-low)//2
+        if array[mid]==k:
+            return mid
+        elif array[mid]<k:
+            low=mid+1
+        else:
+            high=mid-1
+    return -1
+array = eval(input())
+array.sort()
+k = eval(input()) 
+print(array)
+res=binarySearchIter(array,k,0,len(array)-1)
+if res==-1:
+    print("Element not found")
+else:
+    print("Element found at index: ",res)
 
 
 
 ```
 ## Sample Input and Output
 
+![Screenshot 2024-03-24 193835](https://github.com/rdxkeerthi/Search-Algorithms/assets/147473120/f9dfc375-33f5-4b9d-931c-253686cb4a7d)
 
+![Screenshot 2024-03-24 193821](https://github.com/rdxkeerthi/Search-Algorithms/assets/147473120/9aff4c60-ce15-49dd-95aa-e12d32cbffd6)
 
+![Screenshot 2024-03-24 193805](https://github.com/rdxkeerthi/Search-Algorithms/assets/147473120/6a2407a0-d294-4a8f-afa9-7bacc65f7f1a)
 
 
 
