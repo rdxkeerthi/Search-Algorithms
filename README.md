@@ -19,6 +19,11 @@ To write a program to perform linear search and binary search using python progr
 ## Program:
 i)	#Use a linear search method to match the item in a list.
 ```
+''' 
+Program to the maximum marks without using builtin functions.
+Developed by: KEERTHIVASAN M
+RegisterNumber: 212223100021
+'''
 def linearSearch(array,n,k):
     for i in range(n):
         if array[i]==k:
@@ -39,7 +44,11 @@ else:
 ```
 ii)	# Find the element in a list using Binary Search(Iterative Method).
 ```
-
+''' 
+Program to the maximum marks without using builtin functions.
+Developed by: KEERTHIVASAN M
+RegisterNumber: 212223100021
+'''
 def binarySearchIter(array, k, low, high):
     while low<=high:
         mid=low+(high-low)//2
@@ -66,7 +75,11 @@ else:
 ```
 iii)	# Find the element in a list using Binary Search (recursive Method).
 ```
-
+''' 
+Program to the maximum marks without using builtin functions.
+Developed by: KEERTHIVASAN M
+RegisterNumber: 212223100021
+'''
 def binarySearchIter(array, k, low, high):
     while low<=high:
         mid=low+(high-low)//2
